@@ -1,6 +1,5 @@
 <?php
 
-
 function lang($phrase) {
     static $lang = array(
         "Message" => " Welcome ",
@@ -9,4 +8,3 @@ function lang($phrase) {
     );
     return $lang[$phrase];
 }
-
