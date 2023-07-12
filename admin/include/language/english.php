@@ -2,9 +2,17 @@
 
 function lang($phrase) {
     static $lang = array(
-        "Message" => " Welcome ",
-        "Admin" => " Administrator ",
-        "Mohamed" => " Mohamed Ibrahim "
+        // NavBar Links
+        "HOME_ADMIN"    => "Home",
+        "CATEGORIES"    => "Categories",
+        "ITEMS"         => "Items",
+        "MEMBERS"       => "Members",
+        "STATISTICS"    => "Statistics",
+        "LOGS"          => "Logs",
+        ""              => "",
+        ""              => "",
+        ""              => "",
+        ""              => "",
     );
     return $lang[$phrase];
 }

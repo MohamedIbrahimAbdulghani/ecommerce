@@ -1,8 +1,9 @@
 body {
     background-color: #F4F4F4;
+    font-size: 16px;
 }
 form {
-    width: 400px;
+    width: 450px;
     margin: 100px auto;
     padding: 20px;
 }
@@ -22,3 +23,51 @@ form .form-control:focus {
 form .submit {
     margin-bottom: 10px;
 }
+.logout {
+    margin-left: auto;
+    display: block;
+    margin-top: -20px;
+}
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+.navbar-brand {
+    font-size: 1em;
+}
+.navbar-dark .navbar-nav .nav-link {
+    padding: 15px 12px;
+    color: white;
+}
+.admin_name .nav-link, 
+.dropdown-menu{
+    background-color: #3498db;
+}
+.dropdown-menu {
+    min-width: 180px;
+    padding: 0;
+    font-size: 1em;
+    margin-top: 7px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.dropdown-item {
+    color: white;
+    padding: 10px 15px;
+}
+.dropdown-item:hover {
+    padding: 10px 50px;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+@media only screen and (max-width: 992px) {
+    .dropdown-item:hover {
+        padding: 10px 43%;
+    }
+  }
