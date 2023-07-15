@@ -58,6 +58,7 @@ form .submit {
     color: white;
     padding: 10px 15px;
 }
+.dropdown-item:focus, 
 .dropdown-item:hover {
     padding: 10px 50px;
     transition: all 0.7s ease-in-out;
