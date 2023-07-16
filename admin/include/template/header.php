@@ -1,4 +1,8 @@
-<?php include_once "init.php" ?>
+<?php 
+include_once "init.php";  
+include_once $function . "/global_functions.php";  
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +16,7 @@
     <!-- css link -->
     <!-- <link rel="stylesheet" href="design/css/backend.css"> -->
     <link rel="stylesheet" href="<?php echo $css . "backend.css" ?>">
-    <title>ADMIN</title>
+    <title><?php getTitle(); ?></title>
 </head>
 <body>
     

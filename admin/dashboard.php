@@ -1,5 +1,6 @@
 <?php
 session_start();
+$pageTitle = "Dashboard";
 include_once "init.php";
 
 
@@ -10,8 +11,8 @@ else:
 endif;
 
 
-
 ?>
+
 
 
 <?php  include_once $template . "footer.php"; ?>

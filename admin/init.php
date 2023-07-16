@@ -14,7 +14,9 @@ $language = "include/language/";    // languages director
 include_once $language . "english.php";
 include_once $template . "header.php";
 
+// Include The Functions Files
 include_once $function . "user.php";
+include_once $function . "global_functions.php";  
 
 
 // include navbar in all pages expect the one with $noNavBar variable

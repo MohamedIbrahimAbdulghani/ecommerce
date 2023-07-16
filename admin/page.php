@@ -1,12 +1,16 @@
 <?php
 
+session_start();
+
+
 /**
  *  Categories => [ Mange | Edit | Update | Add | Insert | Delete | State ]
  * Condition ? True : False
  */
 
 
-$do = isset($_GET["do"]) ? $_GET["do"] : "Manage";
+if(!empty($_SESSION["user"])):
+    $do = isset($_GET["do"]) ? $_GET["do"] : "Manage";
 
 // $do = "";
 // if(isset($_GET["do"])):
@@ -30,3 +34,9 @@ if($do == "Manage"):
         else:
             echo " Error There's No Page With This Name " . "<br>";
         endif;
+else:
+    header("Location: login.php");
+endif;
+
+
+?>

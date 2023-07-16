@@ -3,8 +3,8 @@ session_start();
 
 // this is variable to remove navbar from any page you want to delete it
 $noNavBar = "";
+$pageTitle = "Login";
 include_once "init.php";
-
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST"):
