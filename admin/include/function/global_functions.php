@@ -9,4 +9,3 @@ function getTitle() {
         echo "Default";
     endif;
 }
-
