@@ -2,26 +2,38 @@ body {
     background-color: #F4F4F4;
     font-size: 16px;
 }
-form {
+.login-form {
     width: 450px;
     margin: 100px auto;
     padding: 20px;
 }
-form h4 {
+.register-form {
+    width: 450px;
+    margin: 45px auto;
+    padding: 20px;
+}
+.login-form h4, 
+.register-form h4 {
     color: #888;
     font-size: 35px;
     margin-bottom: 15px;
 }
-form input {
+.login-form input {
     margin-bottom: 10px;
     padding: 20px !important;
 }
-form .form-control,
-form .form-control:focus {
+.login-form .form-control,
+.login-form .form-control:focus {
     background-color: #E5E5E5;
 }
-form .submit {
+.login-form .submit {
     margin-bottom: 10px;
+}
+.btn {
+    margin-top: 5px !important;
+}
+.link {
+    text-decoration: none !important;
 }
 .logout {
     margin-left: auto;
@@ -71,4 +83,4 @@ form .submit {
     .dropdown-item:hover {
         padding: 10px 43%;
     }
-  }
+}

@@ -19,10 +19,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"):
 endif;
 
 
+if(!empty($_SESSION["user"])):
+  header("Location: dashboard.php");
+endif;
+
+
 ?>
 
 
-<form class="border" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
+<form class="border login-form" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
     <h4 class="text-center">Admin Login</h4>
   <div class="form-group">
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" name="username" autocomplete="off">
@@ -30,6 +35,7 @@ endif;
   <div class="form-group">
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" autocomplete="new-password">
   </div>
+  <a href="register.php" class="link">I Don't Have Account!</a>
   <button type="submit" class="btn btn-primary btn-block ">Submit</button>
 
 
