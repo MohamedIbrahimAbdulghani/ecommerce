@@ -1,6 +1,5 @@
 <?php
 
-
 function selectUser($username, $hashed_password) {
     global $connection_database;
     $select_user = "SELECT `username`, `password` FROM `users` WHERE `username` = '$username' AND `password` = '$hashed_password' AND `group_id` = 1 ";

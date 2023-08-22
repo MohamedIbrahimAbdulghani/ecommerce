@@ -24,7 +24,7 @@ endif;
 
 if(!empty($_SESSION["user"])):
     header("Location: dashboard.php");
-  endif;
+endif;
 
 
 ?>
